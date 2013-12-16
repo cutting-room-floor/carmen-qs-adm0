@@ -15,7 +15,7 @@ env:
   global:
   - secure: rt5kJHOp8zntG8udIE8DR/dQVeXf8eJM+jdJZMaVgdGeih08xnO0q7p5gVXT9jKwXbPNOMv3lmndDOMhN8p7pt+24OKjnrsEvWSua2OtsFhRY1UdPKJewgTEFxuZjoe4qhQlHo+P5Y7k2ogfqqeyfsbXLN5nj33lU9hcNF5d1xY=
   - secure: UfziSWpWMvcZTkEjCQuV4kgoiGJUbPMtKvz1dQbnmanjHnGaH7V5SSdxkczB+KwSLNkPlv+Hl3v8Vi/jAjKZ7nZCXs9Eik7fMFd4dE9I/U4h49HZhMXdVep7G7NX1VFIGs8R+Sx7ibYPy7oQVaGumgy2t0RrcEo2mUxgrjifuos=
-  - dir=qs-adm0
+  - dir="qs-adm0"
 cache:
   directories:
     - node_modules/carmen-travis/node_modules
