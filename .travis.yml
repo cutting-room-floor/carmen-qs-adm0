@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- sudo apt-add-repository --yes ppa:mapnik/v2.2.0
+- sudo apt-get update
+- sudo apt-get install gdal-bin protobuf-compiler libprotobuf-dev libmapnik libmapnik-dev s3cmd
+- npm install topojson
+install:
+- npm install
+- ./node_modules/carmen-travis/make_s3cfg
+script:
+- ./node_modules/carmen-travis/watch
+env:
+  global:
+  - secure: rt5kJHOp8zntG8udIE8DR/dQVeXf8eJM+jdJZMaVgdGeih08xnO0q7p5gVXT9jKwXbPNOMv3lmndDOMhN8p7pt+24OKjnrsEvWSua2OtsFhRY1UdPKJewgTEFxuZjoe4qhQlHo+P5Y7k2ogfqqeyfsbXLN5nj33lU9hcNF5d1xY=
+  - secure: UfziSWpWMvcZTkEjCQuV4kgoiGJUbPMtKvz1dQbnmanjHnGaH7V5SSdxkczB+KwSLNkPlv+Hl3v8Vi/jAjKZ7nZCXs9Eik7fMFd4dE9I/U4h49HZhMXdVep7G7NX1VFIGs8R+Sx7ibYPy7oQVaGumgy2t0RrcEo2mUxgrjifuos=
+cache:
+  directories:
+    - node_modules/carmen-travis/node_modules
