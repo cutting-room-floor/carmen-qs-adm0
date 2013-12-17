@@ -10,6 +10,6 @@
         "url": "git://github.com/mapbox/carmen-qs-adm0.git"
     },
     "dependencies": {
-        "carmen-travis": "git+https://git@github.com:mapbox/carmen-travis.git#d7ff006"
+        "carmen-travis": "git+ssh://git@github.com:mapbox/carmen-travis.git"
     }
 }
