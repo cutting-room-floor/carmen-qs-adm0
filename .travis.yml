@@ -8,9 +8,8 @@ before_install:
 - npm install topojson
 install:
 - npm install
-- ./node_modules/carmen-travis/make_s3cfg
 script:
-- ./node_modules/carmen-travis/watch data
+- ./node_modules/carmen-travis/watch
 cache:
   directories:
   - node_modules/carmen-travis/node_modules
