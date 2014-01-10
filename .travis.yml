@@ -9,7 +9,7 @@ before_install:
 install:
 - npm install
 script:
-- ./node_modules/carmen-travis/watch
+- ./node_modules/carmen-travis/watch data
 cache:
   directories:
   - node_modules/carmen-travis/node_modules
