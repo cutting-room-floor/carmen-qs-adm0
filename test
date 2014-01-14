@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if test -e ./data.yml
-then 
+then
   echo "data.yml exists"
   exit 0
 else
@@ -10,7 +10,7 @@ else
 fi
 
 if test -e ./data.xml
-then 
+then
   echo "data.xml exists"
   exit 0
 else
@@ -19,7 +19,7 @@ else
 fi
 
 if [ ! -d ./data ]
-then 
+then
   echo "data directory exists"
   exit 0
 else
