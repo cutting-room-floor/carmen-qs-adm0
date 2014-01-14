@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+if test -e ./data.yml
+then 
+  echo "data.yml exists"
+  exit 0
+else
+  echo "data.yml does not exist"
+  exit 1
+fi
+
+if test -e ./data.xml
+then 
+  echo "data.xml exists"
+  exit 0
+else
+  echo "data.xml does not exist"
+  exit 1
+fi
+
+if [ ! -d ./data ]
+then 
+  echo "data directory exists"
+  exit 0
+else
+  echo "data direcotry does not exist"
+  exit 1
+fi
