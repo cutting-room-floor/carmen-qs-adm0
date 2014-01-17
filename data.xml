@@ -29,7 +29,7 @@
        <Parameter name="port"><![CDATA[]]></Parameter>
        <Parameter name="table"><![CDATA[tmpiecx]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[i]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
   </Layer>
 

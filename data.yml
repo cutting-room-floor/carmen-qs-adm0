@@ -21,7 +21,7 @@ Layer:
       port: ''
       table: tmpiecx
       type: postgis
-      user: i
+      user: postgres
     description: ''
     fields: 
       bounds: String
