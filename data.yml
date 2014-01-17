@@ -19,7 +19,7 @@ Layer:
       key_field: ogc_fid
       max_size: 512
       port: ''
-      table: tmpiecx
+      table: data
       type: postgis
       user: postgres
     description: ''

@@ -27,7 +27,7 @@
        <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
        <Parameter name="max_size"><![CDATA[512]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[tmpiecx]]></Parameter>
+       <Parameter name="table"><![CDATA[data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
