@@ -2,7 +2,7 @@
 set -e -u
 
 # this is scary and probably a terrible idea. 
-admin_level=$(echo $1 | sed 's/\..*//')
+admin_level=$(echo $1 | sed 's/\..*//;s/.*\///')
 
 # convert to sqlite to gernerate a quicker list of features
 if test -e data/${admin_level}.sqlite
@@ -18,7 +18,6 @@ for country in $countries
 do
     j=$(echo $country | sed 's/-/ /g')
     ogr2ogr \
-        -overwrite \
         -f "GeoJSON" \
         -sql "select * from qs_adm0 where qs_a0 = '$j'" \
         data/${country}.geojson \
@@ -26,6 +25,7 @@ do
 
     topojson \
         --bbox \
+        --properties \
         --no-quantization \
         data/${country}.geojson \
         -o data/${country}.json
