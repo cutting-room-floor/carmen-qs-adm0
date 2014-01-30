@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="center">0,0,3</Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"data","description":"","minzoom":0,"maxzoom":6,"fields":{"ogc_fid":"Number","name":"String","search":"String","lon":"Number","lat":"Number","bounds":"String"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"data","description":"","minzoom":0,"maxzoom":6,"fields":{"_id":"Number","a3":"String","_text":"String"}}]}]]></Parameter>
   <Parameter name="maxzoom">6</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[qs-adm0]]></Parameter>
@@ -21,13 +21,13 @@
     <Datasource>
        <Parameter name="dbname"><![CDATA[carmen]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
-       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[_geometry]]></Parameter>
        <Parameter name="geometry_table"><![CDATA[]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
-       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
+       <Parameter name="key_field"><![CDATA[_id]]></Parameter>
        <Parameter name="max_size"><![CDATA[512]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
-       <Parameter name="table"><![CDATA[data]]></Parameter>
+       <Parameter name="table"><![CDATA[qsadm0]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>
