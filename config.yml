@@ -1,0 +1,12 @@
+id: qs_adm0_a3
+geom:
+ - geometry: wkb_geometry
+ - srs: 4326
+ - geom_type: multipolygon
+text: 
+ - qs_adm0
+ - qs_a0
+format: shp
+name: qsadm0
+group_by: qs_adm0_a3
+
