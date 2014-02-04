@@ -1,4 +1,5 @@
 id: qs_adm0_a3
+name: qsadm0
 geom:
  - geometry: wkb_geometry
  - srs: 4326
@@ -7,6 +8,5 @@ text:
  - qs_adm0
  - qs_a0
 format: shp
-name: qsadm0
 group_by: qs_adm0_a3
-
+maxz: 6
